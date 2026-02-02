@@ -20,6 +20,8 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+
 }
 h1{
     margin-top: 0;
@@ -297,4 +299,50 @@ a:active{
     color: #555;
     border: 1px solid transparent;
     transition: border-bottom 0.5s,color 0.5s;
+}
+.section-cities::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* section testimonials */
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('img/back-food-1.jpg');
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+.section-testimonials::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+blockquote::before{
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -3px;
 }
